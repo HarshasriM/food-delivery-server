@@ -1,0 +1,10 @@
+//importing packages we use requirw
+const os = require("os")
+console.log("Free Memory:",(os.freemem()/1024/1024/1024))
+console.log("Total Memory:",os.totalmem()/1024/1024/1024)
+console.log("userInfo:",os.userInfo())
+console.log("platform:",os.platform())
+console.log("version",os.version())
+console.log("uptime",os.uptime())
+console.log("arch",os.arch())
+console.log(`Processor,${os.cpus().length} core`)
